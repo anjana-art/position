@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: teal;
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            background-color: white;
+            color: black;
+            padding: 14px 14px;
+            margin: 8px 0px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button{
+            background-color: yellow;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover{
+            background-color: black;
+            color: yellow;
+        }
+        div{
+            border: 1px dashed turquoise;
+            background-color: tomato;
+            width: 50%;
+            margin-left: 25%;
+            border-radius: 10px;
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Contact Form</h1>
+    <div>
+     <input  type="text" id="fname" name="fname" placeholder="first name">
+     <br>
+     <input type="text" id="lname" name="lname" placeholder="last name">
+     <br>
+     <input type="checkbox" id="green" name="color1" value="green" checked>
+     <label for="green">Green</label>
+     <input type="checkbox" id="yellow" name="color2" value="yellow" checked>
+     <label for="yellow">Yellow</label>
+     <br>
+     <input type="radio" id="male" name="gender" value="male" checked>
+     <label for="male">male</label>
+     <input type="radio" id="female" name="gender" value="female" checked>
+     <label for="female">female</label>
+     <br>
+     <textarea id="contact" name="contact" rows="5" cols="50">Please contact us...</textarea>
+     <br>
+     <button onclick="contact()">contact us</button>
+    </div>
+</body>
+</html>
